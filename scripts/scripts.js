@@ -105,7 +105,3 @@ function changeDuration() {
 
 // enable click
 durationButton.addEventListener("click", changeDuration);
-
-
-
-
