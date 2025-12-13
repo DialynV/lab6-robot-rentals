@@ -62,7 +62,7 @@ function changeModel() {
         modelTextSpan.textContent = "Model CPRG";
     } else {
         modelName = "XYZ";
-        modelTextSpan.textContent = "Model ZYZ"
+        modelTextSpan.textContent = "Model XYZ"
     }
     // recalculate cost
     recalculate();
@@ -94,7 +94,7 @@ function changeDuration() {
     let newNumber = Number(userInput);
 
     //basic validation
-    if (!Number.isNan(newNumber) && newNumber >= 0) {
+    if (!Number.isNaN(newNumber) && newNumber >= 0) {
         duration = newNumber;
         durationSpan.textContent = duration;
         recalculate();
@@ -104,7 +104,8 @@ function changeDuration() {
 }
 
 // enable click
-durationButton.addEventListener("click, changeDuration");
+durationButton.addEventListener("click", changeDuration);
+
 
 
 
